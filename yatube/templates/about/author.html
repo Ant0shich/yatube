@@ -1,10 +1,30 @@
-<!-- templates/about/author.html -->
 {% extends "base.html" %}
-{% block title %}Об авторе проекта{% endblock %}
+{% block title %}
+  Кто это сделал?
+{% endblock %}
+{% load static %}
 {% block content %}
-<h1>Привет, я создатель этого сайта</h1>
+<h1>Привет, я автор данного проекта <span style="color:#dc3545">Ya</span>tube - Антон Бородин</h1>
+<p>Проект был разработан в рамках блока "Бэкенд на Django" курса
+  <a href="https://practicum.yandex.ru/backend-developer/">
+    Python-разработчик
+  </a>
+  Яндекс.Практикума
+</p>
+<p>Контакты (не шоу Шастуна):</p>
 <p>
-  Тут я размещу информацию о себе, только позже.
-  Это было тяжело, но ты читаешь этот текст на этом сайте. И это хорошо!
+  <a href="https://github.com/Ant0shich">
+      Github
+  </a>
+</p>
+<p>
+  <a href="https://t.me/Antosshich">
+      Telegram: @Antosshich
+  </a>
+</p>
+<p>
+  <a href="mailto:borodin6746@mail.ru">
+      borodin6746@mail.ru
+  </a>
 </p>
 {% endblock %}

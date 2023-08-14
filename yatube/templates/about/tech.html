@@ -1,32 +1,63 @@
-<!-- templates/about/tech.html -->
 {% extends "base.html" %}
-{% block title %}Технологии{% endblock %}
+{% block title %}
+  Технологии
+{% endblock %}
 {% block content %}
 {% comment %} Колонки с отступом сверху и снизу {% endcomment %}
+{% load static %}
 <div class="row">
-  <h1>Технологии</h1>
+  <h1>Что использовалось?</h1>
   {% comment %}
-    Боковой блок со списком технологий 
+    Боковой блок со списком технологий
     Займет всю ширину блока на мобильном
     и 25% при размерах экрана ≥768px
   {% endcomment %}
   <aside class="col-12 col-md-3">
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
-        Python
+        <a href="https://www.python.org/">
+          Python
+        </a>
       </li>
       <li class="list-group-item">
-        Django
+        <a href="https://www.djangoproject.com/">
+          Django
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="https://github.com/">
+          Github
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="https://www.sqlite.org">
+          SQLite
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="https://html.spec.whatwg.org/">
+          HTML
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="https://www.w3.org/Style/CSS/">
+          CSS
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="https://getbootstrap.com/">
+          Bootstrap
+        </a>
       </li>
     </ul>
   </aside>
   {% comment %}
-    Статья  
+    Статья
     Займет всю ширину блока на мобильном
     и 75% при размерах экрана ≥768px
   {% endcomment %}
   <article class="col-12 col-md-9">
-    <p>Пока тут пусто, но обязательно что-то будет невероятное. Главное, что работает</p>
+    <p>Технологии, которые были использованы для проекта <span style="color:#dc3545">Ya</span>tube</p></p>
   </article>
 </div>
 {% endblock %}
